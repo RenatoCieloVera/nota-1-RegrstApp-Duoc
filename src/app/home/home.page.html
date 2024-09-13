@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar class="">
+    <ion-title>Ingreso de Estudiantes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- Imagen de fondo -->
+  <div class="page-background"></div>
+
+  <!-- Contenedor del contenido -->
+  <div class="container">
+    <img src="assets/image/a.png" alt="Duoc Logo" class="logo">
+    <div class="form-wrapper">
+      <form (ngSubmit)="iniciarSesion()">
+        <ion-item lines="none">
+          <ion-label position="floating">Nombre de Usuario</ion-label>
+          <ion-input [(ngModel)]="nombreUsuario" name="nombreUsuario" type="text" required></ion-input>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label position="floating">Correo Electrónico</ion-label>
+          <ion-input [(ngModel)]="correo" name="correo" type="email" required></ion-input>
+        </ion-item>
+
+        <ion-item lines="none">
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input [(ngModel)]="contrasena" name="contrasena" type="password" required></ion-input>
+        </ion-item>
+
+
+        <ion-button expand="full" type="submit">Ingresar</ion-button>
+        <ion-button expand="full" color="warning" (click)="irARestablecerContrasena()">Restablecer Contraseña</ion-button>
+
+      </form>
+    </div>
+  </div>
+</ion-content>
+
+<ion-footer>
+</ion-footer>

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Restablecer Contraseña - Duoc</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="page-background"></div>
+  <div class="container">
+    <img src="assets/image/a.png" alt="Duoc Logo" class="logo">
+    <div class="form-wrapper">
+      <form (ngSubmit)="restablecerContrasena()">
+        <ion-item lines="none">
+          <ion-label position="floating">Correo Electrónico</ion-label>
+          <ion-input [(ngModel)]="correo" name="correo" type="email" required></ion-input>
+        </ion-item>
+
+        <ion-button expand="full" type="submit">Recuperar</ion-button>
+      </form>
+    </div>
+  </div>
+</ion-content>

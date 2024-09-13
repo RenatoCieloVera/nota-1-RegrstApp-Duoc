@@ -1,0 +1,106 @@
+.page-background {
+  background-image: url('/assets/image/b.jpg');
+  background-size: cover;
+  background-position: center;
+  filter: blur(2px); 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+ion-header {
+  --background: #3880ff;
+  --color: #ffffff;
+}
+
+ion-toolbar {
+  --background: #003d7c;
+}
+
+ion-title {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.welcome-label {
+  color: #ffffff;
+  font-size: 2.0rem;
+  font-weight: bold;
+}
+
+ion-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  padding: 16px;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.custom-card {
+  width: 100%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px #ffcc00;
+  background-color: #003d7c;
+}
+
+.custom-card ion-card-header {
+  background-color: #003d7c;
+  padding: 15px;
+  border-radius: 10px 10px 0 0;
+}
+
+.custom-card ion-card-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fffefe;
+}
+
+.custom-card ion-card-subtitle {
+  font-size: 1rem;
+  color: #d8d5d5;
+}
+
+.yt-video-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.yt-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+}
+
+.logout-button {
+  width: 150px;
+  height: 40px;
+  font-size: 0.8rem; 
+  color: #ffffff; 
+  --border-radius: 10px; 
+}
